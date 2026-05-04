@@ -1,17 +1,106 @@
+:root {
+--Red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--Green: hsl(167, 40%, 24%);
+--Blue: hsl(198, 62%, 26%);
+--Green: hsl(167, 34%, 41%);
 
-
-@media screen and(max-width: 1000px) {
+--Dark: hsl(212, 27%, 19%);
+--Mid: hsl(213, 9%, 39%);
+--Light: hsl(232, 10%, 55%);
+--Pale: hsl(210, 4%, 67%);
+--White: hsl(0, 100%, 100%);
 
 }
 
-.barlow-semibold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+* {
+    box-sizing: border-box;
 }
 
-.barlow-bold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 700, 900;
-  font-style: normal;
+body {
+    margin: 0;
+    background-color: var(--Blue);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+header,
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 35px;
+}
+.primary-navigation {
+    display: none;
+}
+.hero {
+    background-image: url(/supplied-images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* TYPOGRAPHY */
+
+h1 {
+    color: var(--White);
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+.primary-navigation {
+    display: flex;
+
+}
+.flex {
+    color: var(--White);
+    list-style: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+button {
+    border: none;
+    color: black;
+    background-color: var(--White);
+    padding: 15px;
+    border-radius: 20%;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.hamb {
+    display: none;
+}
+}
+
+
