@@ -1,7 +1,7 @@
 :root {
 --Red: hsl(7, 99%, 70%);
 --Yellow: hsl(51, 100%, 49%);
---Green: hsl(167, 40%, 24%);
+--DarkGreen: hsl(167, 40%, 24%);
 --Blue: hsl(198, 62%, 26%);
 --Green: hsl(167, 34%, 41%);
 
@@ -19,7 +19,6 @@
 
 body {
     margin: 0;
-    background-color: var(--Blue);
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -57,15 +56,144 @@ header {
 }
 
 
+.grid img {
+    width: 100%;
+    display: flex;
+}
+
+.whitebg {
+    background-color: var(--White);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+
+}
+.learn-more {
+
+    font-family: "Fraunces";
+    font-weight: 700;
+    color: black;
+    text-decoration: underline var(--Yellow);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 0px;
+}
+
+.graphic-design, .photography{
+    background-image: url(/supplied-images/desktop/image-graphic-design.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+.graphic-design, .photography p{
+    color: var(--Mid);
+}
+.photography {
+    background-image: url(/supplied-images/desktop/image-photography.png);
+
+}
+.content-bg-image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.client-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 100px;
+
+}
+.client-testimonials h3{
+color: var(--Light);
+letter-spacing: 0.25rem;
+}
+.clients-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.clients {
+    text-align: center;
+}
+.clients img{
+    border-radius: 50%;
+    width: 50px;
+}
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.image-gallery img {
+    width: 100%;
+}
+footer {
+    background-color: var(--Green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 20px;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.quick-links li {
+    list-style: none;
+    color: var(--DarkGreen);
+}
+.icons {
+    gap: 20px;
+}
+
 /* TYPOGRAPHY */
 
-h1 {
+h1, h2, h3, .name {
     color: var(--White);
     font-family: "Fraunces";
     font-weight: 700;
     font-size: 4rem;
-    text-align: center;
 }
+h1 {
+text-align: center;
+}
+h2 {
+    color: black;
+    font-size: 2rem;
+}
+h3 {
+    color: var(--Mid);
+    font-size: 1.5rem;
+}
+.name {
+    color: var(--Dark);
+    font-size: 1rem;
+}
+
+p {
+    font-family: "Barlow";
+    font-weight: 500;
+    line-height: 28px;
+}
+.position {
+    color: var(--Light);
+    font-weight: 600;
+    font-size: 0.70rem;
+}
+
 
 
 
@@ -100,6 +228,24 @@ button {
 
 .hamb {
     display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+}
+.whitebg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:left
+}
+.clients-container{
+    flex-direction: row;
+}
+.image-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 }
 }
 
