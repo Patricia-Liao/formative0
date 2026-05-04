@@ -61,9 +61,9 @@ header {
     display: flex;
 }
 
-.whitebg {
+.whitebg, .whitebg-egg {
     background-color: var(--White);
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,11 +82,11 @@ header {
     text-underline-offset: 0px;
 }
 
-.graphic-design, .photography{
+.graphic-design, .photography, .egg, .cup{
     background-image: url(/supplied-images/desktop/image-graphic-design.png);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 700px;
     display: flex;
     align-items: flex-end;
     padding: 60px;
@@ -96,7 +96,12 @@ header {
 }
 .photography {
     background-image: url(/supplied-images/desktop/image-photography.png);
-
+}
+.egg {
+    background-image: url(/supplied-images/desktop/image-transform.png);
+}
+.cup {
+    background-image: url(/supplied-images/desktop/image-stand-out.png);
 }
 .content-bg-image {
     display: flex;
@@ -110,6 +115,7 @@ header {
     text-align: center;
     gap: 50px;
     padding: 100px;
+    height: 700px;
 
 }
 .client-testimonials h3{
@@ -234,7 +240,11 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 1fr);
 }
-.whitebg {
+.whitebg-egg {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.whitebg, .whitebg-egg {
     display: flex;
     flex-direction: column;
     justify-content: center;
